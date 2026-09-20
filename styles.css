@@ -153,3 +153,10 @@ footer{padding:48px 6vw;background:var(--navy2);border-top:3px solid var(--gold)
     padding: 50px 7%;
   }
 }
+
+
+/* Bright white headings on dark sections */
+.section-dark h2,
+.about h2 {
+  color: #ffffff !important;
+}
