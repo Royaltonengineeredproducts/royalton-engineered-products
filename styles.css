@@ -11,3 +11,37 @@
 footer{padding:48px 6vw;background:var(--navy2);border-top:3px solid var(--gold);display:grid;grid-template-columns:1fr auto;gap:14px;align-items:end}.footer-brand{display:flex;align-items:center;gap:12px}.footer-brand strong{display:block;font-family:Georgia,serif;font-size:26px;letter-spacing:2px}.footer-brand span{display:block;color:var(--gold2);font-size:9px;letter-spacing:3px}.footer-contact{display:flex;flex-direction:column;text-align:right;font-size:12px;gap:4px}.footer-contact a:hover{color:var(--gold2)}.copyright{grid-column:1/-1;border-top:1px solid #25445d;padding-top:16px;color:#8796a3;font-size:11px}
 @media(max-width:900px){.site-header{height:72px}.nav{display:none;position:absolute;top:72px;left:0;right:0;background:#05080b;padding:22px 6vw;flex-direction:column;align-items:stretch;gap:0}.nav.open{display:flex}.nav a:not(.nav-cta){padding:14px 0;border-bottom:1px solid #222}.nav-cta{text-align:center;margin-top:12px}.menu-toggle{display:block}.hero{min-height:430px}.feature-strip{grid-template-columns:1fr 1fr}.section-heading,.split,.about,.quote{grid-template-columns:1fr;gap:35px}.gallery{grid-template-columns:1fr 1fr}.card-wide{grid-column:span 2}.commercial{grid-template-columns:1fr}.commercial-image img{min-height:420px}.commercial-copy{padding:60px 6vw}}
 @media(max-width:600px){.brand-main{font-size:21px}.brand-sub{font-size:7px}.crown{font-size:24px}.hero{height:68vh;min-height:420px}.hero-tag{left:6vw}.hero-tag span{font-size:10px}.hero-tag strong{font-size:26px}.section,.section-dark{padding:65px 6vw}.actions{flex-direction:column}.feature-strip{grid-template-columns:1fr}.feature-strip div{border-right:0}.gallery{grid-template-columns:1fr}.card-wide{grid-column:auto}.card{min-height:380px}.quote-form{grid-template-columns:1fr}.commercial-image img{min-height:350px}footer{grid-template-columns:1fr}.footer-contact{text-align:left}}
+
+
+/* Updated Royalton portfolio gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  align-items: stretch;
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Keep gallery responsive on smaller screens */
+@media (max-width: 900px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery img {
+    height: 280px;
+  }
+}
