@@ -236,3 +236,42 @@ footer{padding:48px 6vw;background:var(--navy2);border-top:3px solid var(--gold)
   font-weight: 800;
   text-decoration: none;
 }
+
+
+/* Project Reference Files */
+.project-files {
+  margin-top: 6px;
+  padding: 20px 22px;
+  border: 1px solid #d7d0c4;
+  background: #f7f4ee;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+.project-files strong {
+  color: #071523;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.project-files span {
+  color: #505862;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.project-files a {
+  color: #b98513;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .7px;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+.project-files a:hover {
+  color: #071523;
+}
