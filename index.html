@@ -112,11 +112,12 @@
     <label>Name<input name="name" required></label>
     <label>Email<input name="email" type="email" required></label>
     <label>Phone<input name="phone" type="tel"></label>
-    <label>Project type<select name="type"><option>Custom residential display</option><option>Commercial display</option><option>Large-scale installation</option><option>Replacement / expansion</option><option>Other</option></select></label>
+    <label>Project type<select name="type"><option selected>Commercial display</option><option>Custom residential display</option><option>Large-scale installation</option><option>Other</option></select></label>
     <label>Approximate size<input name="size" placeholder="Example: 8 ft wide x 6 ft tall"></label>
     <label>Quantity<input name="quantity" type="number" min="1" value="1"></label>
     <label class="full">Desired completion date<input name="date" type="date"></label>
     <label class="full">Tell us about your idea<textarea name="idea" rows="6" placeholder="Describe the display, colors, lighting, installation, or anything else that would help us understand your idea."></textarea></label>
+    <label class="full">Attachments (optional)<input type="file" name="attachments" accept=".jpg,.jpeg,.png,.webp,.pdf" multiple><small>Upload inspiration photos, sketches, drawings, or PDFs.</small></label>
     <button class="btn btn-navy full" type="submit">Send Quote Request →</button>
     <p class="form-message full">Clicking Send Quote Request will open your email app with these project details addressed to Royalton Engineered Products.</p>
   </form>
